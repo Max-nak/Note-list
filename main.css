@@ -8,18 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#app {
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
 .creator {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 500px;
+    max-width: 1000px;
     min-height: 20px;
     background-color: bisque;
     border-radius: 20px;
@@ -58,22 +48,28 @@ h2 {
 }
 
 .creator__input {
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
-    margin: 25px 25px 5px;
+    margin: 25px 25px 0px;
     min-width: 89%;
     max-width: 89%;
     height: auto;
 }
-
+.btns{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: 20px 30px;
+}
 .create {
-    margin: 0 25px 25px;
+    width: 140px;
+    font-size: 20px;
     background-color: rgb(71, 210, 71);
     padding: 2px 15px;
-    font-size: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
     border: 1px solid rgb(0, 189, 0);
     box-shadow: inset -2px -2px 3px 0 rgba(255, 255, 255, 0.775);
+    transition: 0.3s;
 }
 
 .create:hover {
@@ -83,13 +79,14 @@ h2 {
 }
 
 .clear__list {
-    margin: 0 25px 25px;
+    width: 140px;
     background-color: rgb(210, 71, 71);
     padding: 2px 15px;
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
     border: 1px solid rgb(189, 0, 0);
     box-shadow: inset -2px -2px 3px 0 rgba(255, 255, 255, 0.775);
+    transition: 0.3s;
 }
 
 .clear__list:hover {
@@ -100,6 +97,7 @@ h2 {
 
 .note__list {
     margin: 5px 25px;
+    transition: 0.5s;
 }
 
 .note p {
@@ -112,7 +110,7 @@ h2 {
 
 .note {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -123,16 +121,17 @@ h2 {
     font-size: 25px;
     width: 30px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 50%;
     border: none;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(210, 71, 71);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .close:hover {
     cursor: pointer;
-    background-color: rgb(255, 80, 80);
+    background-color: rgb(247, 85, 85);
     box-shadow: inset -2px -2px 2px 2px rgba(255, 255, 255, 0.701);
 }

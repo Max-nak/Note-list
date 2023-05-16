@@ -20,9 +20,9 @@
             <hr>
             <div v-if="show">
                 <textarea class="creator__input" v-model="value" placeholder="Текст заметки" rows="2"></textarea><br>
-                <div>
-                    <button @click="addNote" class="create">Создать заметку</button>
-                    <button @click="clearList" class="clear__list">Очистить список</button>
+                <div class="btns">
+                    <button @click="addNote" class="create">Создать<br>заметку</button>
+                    <button @click="clearList" class="clear__list">Очистить<br>список</button>
                 </div>
                 <hr>
                 <ol class="note__list">
