@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 43, 80);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#app {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.creator {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 500px;
+    min-height: 20px;
+    background-color: bisque;
+    border-radius: 20px;
+    /* padding: 15px; */
+}
+
+.move {
+    position: relative;
+    cursor: move;
+    background-color: rgb(241, 203, 155);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hide {
+    position: absolute;
+    top:5px;
+    left: 20px;
+    font-size: 30px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid rgb(103, 103, 103);
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.hide:hover{
+    cursor: pointer;
+}
+
+.creator__input {
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 25px 25px 5px;
+    min-width: 89%;
+    max-width: 89%;
+    height: auto;
+}
+
+.create {
+    margin: 0 25px 25px;
+    background-color: rgb(71, 210, 71);
+    padding: 2px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 189, 0);
+    box-shadow: inset -2px -2px 3px 0 rgba(255, 255, 255, 0.775);
+}
+
+.create:hover {
+    cursor: pointer;
+    background-color: rgb(85, 247, 85);
+    box-shadow: inset -2px -2px 3px 0 rgba(255, 255, 255, 0.94);
+}
+
+.clear__list {
+    margin: 0 25px 25px;
+    background-color: rgb(210, 71, 71);
+    padding: 2px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(189, 0, 0);
+    box-shadow: inset -2px -2px 3px 0 rgba(255, 255, 255, 0.775);
+}
+
+.clear__list:hover {
+    cursor: pointer;
+    background-color: rgb(247, 85, 85);
+    box-shadow: inset -2px -2px 3px 0 rgba(255, 255, 255, 0.94);
+}
+
+.note__list {
+    margin: 5px 25px;
+}
+
+.note p {
+    max-width: 80%;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.note {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.536);
+}
+
+.close {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close:hover {
+    cursor: pointer;
+    background-color: rgb(255, 80, 80);
+    box-shadow: inset -2px -2px 2px 2px rgba(255, 255, 255, 0.701);
+}
